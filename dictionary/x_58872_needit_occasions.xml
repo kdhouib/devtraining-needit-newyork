@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="occasions" max_length="40" name="x_58872_needit_occasions" type="collection">
+        <element label="employee" max_length="32" name="employee" reference="sys_user" type="reference"/>
+        <element label="Employee email" mandatory="true" max_length="40" name="employee_email" type="string"/>
+        <element label="Number" max_length="40" name="number" type="integer"/>
+        <element label="Occasion date" max_length="40" name="occasion_date" type="glide_date"/>
+        <element label="Special occasion" max_length="40" name="special_occasion" type="string"/>
+        <index name="index">
+            <element name="employee"/>
+        </index>
+    </element>
+</database>
